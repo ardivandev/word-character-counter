@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-dark: #212121;
+  --color-secondary-dark: #323232;
+  --color-dark-white: #b6b4b4;
+  --color-primary: #ffffff;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100dvh;
+}
+
+.sec-left {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sec-left main {
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--color-secondary-dark);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sec-left main .sec-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sec-left main .sec-top .information p {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: var(--color-dark-white);
+}
+
+.sec-left main .sec-top h1 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+}
+
+.sec-left main .sec-bottom textarea {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+  font-size: 16px;
+}
+
+.sec-right {
+  background-image: url('../assets/gambar-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  *,
+  html,
+  body {
+    font-size: 95%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sec-left main .sec-top h1 {
+    font-size: 1.6rem;
+  }
+
+  .sec-right {
+    display: none;
+  }
+
+  .sec-left main .sec-bottom textarea {
+    font-size: 14px;
+  }
+}

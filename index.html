@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Website yang digunakan untuk menghitung jumlah karakter, kata dan menghitung estimasi baca dalam 4 menit."
+    />
+    <meta name="author" content="Ardivan Nur Raihan Rahman" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:locale" content="id" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Word & Character Counter" />
+    <meta
+      property="og:description"
+      content="Website yang digunakan untuk menghitung jumlah karakter, kata dan menghitung estimasi baca dalam 4 menit."
+    />
+    <meta property="og:image" content="" />
+
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project Word & Character Counter | Ardivan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sec-left">
+        <main>
+          <div class="sec-top">
+            <h1>Word & Character Counter</h1>
+            <div class="information">
+              <p>Jumlah Karakter: <span id="displayJmlKarakter">0</span></p>
+              <p>Jumlah Kata: <span id="displayJmlKata">0</span></p>
+              <p>Estimasi Waktu Baca: <span id="displayEstimasiBaca">0</span> KPM / 4 Menit</p>
+            </div>
+          </div>
+          <div class="sec-bottom">
+            <textarea
+              name="inputTeks"
+              id="inputTeks"
+              rows="15"
+              autofocus
+              placeholder="Masukkan teks untuk dihitung kata dan karakternya"
+            ></textarea>
+          </div>
+        </main>
+      </div>
+      <div class="sec-right"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
