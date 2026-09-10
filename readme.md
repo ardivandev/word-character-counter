@@ -18,4 +18,4 @@ Website yang digunakan untuk menghitung jumlah karakter, kata dan menghitung est
 
 ---
 
-@ Ardivan Nur Raihan Rahman (2026) | PRoject HTML + CSS + JavaScript
+@ Ardivan Nur Raihan Rahman (2026) | Project HTML + CSS + JavaScript
